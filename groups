@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-faf8755f0149324fc454c4df4055c3e68e8024c2       	puppet-xinetd-distgit-core
-f4116c48e4d8e1c483f78f437380cb424b3c659f        	puppet-xinetd-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+f4116c48e4d8e1c483f78f437380cb424b3c659f	puppet/puppet-xinetd-distgit-ptl
+faf8755f0149324fc454c4df4055c3e68e8024c2	puppet-xinetd-distgit-core
+global:Registered-Users                 	Registered Users
