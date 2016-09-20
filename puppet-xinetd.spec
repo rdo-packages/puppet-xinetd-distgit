@@ -7,8 +7,8 @@
 
 
 Name:           puppet-xinetd
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Configures xinetd and exposes the xinetd::service definition for adding new services.
 License:        Apache-2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/xinetd/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.0.0-1.f9d6e18.git
+- Newton update 2.0.0 (f9d6e186d60d2ae8c6582e59ba13e9c744358784)
+
 
