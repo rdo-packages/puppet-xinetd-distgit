@@ -5,6 +5,11 @@
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
+%global commit f9d6e186d60d2ae8c6582e59ba13e9c744358784
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-xinetd
 Version:        XXX
