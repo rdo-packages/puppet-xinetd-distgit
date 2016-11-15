@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-xinetd
-%global commit f9d6e186d60d2ae8c6582e59ba13e9c744358784
+%global commit a09c77e008377cb2ab36ca0893888f6ef4aadda0
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-xinetd
 Version:        2.0.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Configures xinetd and exposes the xinetd::service definition for adding new services.
 License:        Apache-2.0
 
@@ -49,6 +49,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/xinetd/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-2.a09c77e.git
+- Newton update 2.0.0 (a09c77e008377cb2ab36ca0893888f6ef4aadda0)
+
 * Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.0.0-1.f9d6e18.git
 - Newton update 2.0.0 (f9d6e186d60d2ae8c6582e59ba13e9c744358784)
 
