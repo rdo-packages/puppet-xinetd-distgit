@@ -10,7 +10,7 @@ Name:           puppet-xinetd
 Version:        XXX
 Release:        XXX
 Summary:        Configures xinetd and exposes the xinetd::service definition for adding new services.
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-xinetd
 
