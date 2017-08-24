@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-xinetd
-%global commit f9d6e186d60d2ae8c6582e59ba13e9c744358784
+%global commit 1d1e6d43a1eea48e402ef79e6bb81a516564038e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-xinetd
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        4%{?alphatag}%{?dist}
 Summary:        Configures xinetd and exposes the xinetd::service definition for adding new services.
 License:        ASL 2.0
 
@@ -49,5 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/xinetd/
 
 
 %changelog
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-4.1d1e6d4git
+- Pike update 2.0.0 (1d1e6d43a1eea48e402ef79e6bb81a516564038e)
 
 
