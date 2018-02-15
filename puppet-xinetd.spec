@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-xinetd
-%global commit f9d6e186d60d2ae8c6582e59ba13e9c744358784
+%global commit b95c79caac894f508448ce918407381900f1cda0
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-xinetd
-Version:        XXX
-Release:        XXX
+Version:        3.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Configures xinetd and exposes the xinetd::service definition for adding new services.
 License:        ASL 2.0
 
@@ -49,5 +49,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/xinetd/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 3.0.0-1.b95c79cgit
+- Update to post 3.0.0 (b95c79caac894f508448ce918407381900f1cda0)
+
 
 
