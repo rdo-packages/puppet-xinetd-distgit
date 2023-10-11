@@ -2,14 +2,14 @@
 %define upstream_name puppetlabs-xinetd
 
 Name:           puppet-xinetd
-Version:        XXX
-Release:        XXX
+Version:        3.4.1
+Release:        1%{?dist}
 Summary:        Configures xinetd and exposes the xinetd::service definition for adding new services.
 License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-xinetd
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/v%{upstream_version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/v%{upstream_version}.tar.gz#/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -44,5 +44,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/xinetd/
 
 
 %changelog
-
+* Wed Oct 11 2023 RDO <dev@lists.rdoproject.org> 3.4.1-1
+- Update to 3.4.1
 
