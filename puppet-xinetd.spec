@@ -1,10 +1,5 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppetlabs-xinetd
-%global commit f9d6e186d60d2ae8c6582e59ba13e9c744358784
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
 
 Name:           puppet-xinetd
 Version:        XXX
@@ -14,7 +9,7 @@ License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-xinetd
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
